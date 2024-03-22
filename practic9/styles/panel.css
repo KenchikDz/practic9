@@ -1,0 +1,111 @@
+.content {
+    float: right;
+    background-color: var(--beige);
+    height: 100%;
+    width: 100vw;
+}
+
+.panel {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.panel-item {
+    width: 350px;
+    height: 400px;
+    background-color: var(--darkgray);
+    margin: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.info-item {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.img-item {
+    width: 100%;
+    height: 300px;
+    background-color: black;
+    transition: all 0.4s ease;
+}
+
+.img-item img {
+    width: 100%;
+    height: 100%;
+}
+
+.img-item:hover {
+    transform: scale(1.1);
+}
+
+.panel-item form {
+    width: 100%;
+}
+
+.panel-item form input {
+    width: 100%;
+    height: 40px;
+    cursor: pointer;
+    border: none;
+    transition: all 0.4s ease;
+}
+
+.panel-item form input:hover {
+    background-color: var(--lightgray);
+    color: white;
+}
+
+.main-content form:not(.panel-item form) {
+    width: 400px;
+    margin: 40px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    background-color: var(--darkgray);
+}
+
+.main-content form:not(.panel-item form) input {
+    box-sizing: border-box;
+    width: 100%;
+    margin: 10px;
+    height: 40px;
+    border: none;
+    outline: none;
+    padding: 10px;
+}
+
+.main-content form:not(.panel-item form) select {
+    width: 100%;
+    margin: 10px;
+    padding: 10px;
+    height: 40px;
+    border: none;
+    outline: none;
+    background-color: var(--darkblue);
+}
+
+option:checked,
+option:hover {
+    background-color: var(--darkblue);
+}
+
+label {
+    margin: 10px;
+}
+
+.info {
+    text-align: center;
+    margin: 30px;
+}
